@@ -5,7 +5,6 @@ Workflow management platform.
 
 Subject                                    |Information                                                                                                                                                                                  
 :---------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-LINK 
 LINK                                         |[Docker + Airflow Setup](https://www.youtube.com/watch?v=vvr_WNzEXBE)                                                                                                                          
 LINK                                         |[Airflow Core Concepts](https://airflow.apache.org/docs/stable/concepts.html)                                                                                                                  
 LINK                                         |[Docker + Airflow (Windows Power Shell) Setup](https://youtu.be/20HDFbYyAY0)                                                                                                                   
