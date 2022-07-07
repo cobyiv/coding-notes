@@ -1,5 +1,9 @@
 # coding-notes
 
+<span style="color:blue">some *This is Blue italic.* text</span>
+
+<span style="color:red">some **This is Red Bold.** text</span>
+
 ## Airflow
 Workflow management platform.
 
@@ -8,13 +12,13 @@ Workflow management platform.
 | LINK                                          | [Docker + Airflow Setup](https://www.youtube.com/watch?v=vvr_WNzEXBE) |
 | LINK                                          | [Airflow Core Concepts](https://airflow.apache.org/docs/stable/concepts.html) |
 | LINK                                          | [Docker + Airflow (Windows Power Shell) Setup](https://youtu.be/20HDFbYyAY0) |
-| Gitbash: Navigate to folder                   | `CD airflow-tutorial/`                                       |
-| Gitbash: List contents of folder              | `LS`                                                         |
-| Gitbash: Start Docker compose                 | `Docker-compose up`                                          |
-| Gitbash: Start Docker compose w/status view   | `Docker-compose up -d`                                       |
-| Gitbash: Exit Docker compose                  | `Docker-compose down`                                        |
-| Gitbash: Navigate to different directory      | `CD ENTIRE DIRECTORY`                                        |
-| Gitbash: Read file                            | `CAT FILENAME.EXTENSION`                                     |
+| `Gitbash>` Navigate to folder                 | `CD airflow-tutorial/`                                       |
+| `Gitbash>`  List contents of folder           | `LS`                                                         |
+| `Gitbash>`  Start Docker compose              | `Docker-compose up`                                          |
+| `Gitbash>` Start Docker compose w/status view | `Docker-compose up -d`                                       |
+| `Gitbash>`  Exit Docker compose               | `Docker-compose down`                                        |
+| `Gitbash>` Navigate to different directory    | `CD ENTIRE DIRECTORY`                                        |
+| `Gitbash>`  Read file                         | `CAT FILENAME.EXTENSION`                                     |
 | Powershell: Navigate to folder                | `Set-Location C:\\...`                                       |
 | Powershell: Start Docker compose              | `Docker-compose up`                                          |
 | Powershell: How to view contents of container | CD to directory of .yml and then in cmd prompt type:<br />`> docker ps`<br />Then type<br>`> docker exec -it .YML FOLDERNAME\_webserver\_1 bash` |
@@ -35,7 +39,7 @@ Distribution + Conda package/environment Managerw
 | Activate 32-bit                                            | `set CONDA_FORCE_32BIT=1     activate py27_32`               |
 | Create new Jupyter Notebook Kernel inside new  Environment | [Create   Kernel Article](https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084) |
 
-## **ATOM IDE**
+## Atom IDE
 
 IDE (Integrated Development Manager)
 
@@ -47,7 +51,7 @@ IDE (Integrated Development Manager)
 | Addons         | Script, Autopep8, Minimap                             
 
 
-## AWS LAMBDA
+## AWS Lambda
 
 Cloud Run Functions
 
@@ -71,7 +75,7 @@ Command Prompt for Windows
 | :------------------------------ | :----------------------------------------------------------- |
 | **Go Back one folder**          | cd ..\                                                       |
 | **Delete files in a directory** | You can do this using del and the /S flag (to tell it to remove all files from   all subdirectories):   <br />`del /S C:\Path\to\directory\` <br />[source](https://superuser.com/questions/173859/how-can-i-delete-all-files-subfolders-in-a-given-folder-via-the-command-prompt) |
-## **CRYPTOGRAPHY**
+## **Cryptography**
 
 Python Encryption Library
 
@@ -88,7 +92,7 @@ Python Web Framework
 
 | Subject                  | Information                                                  |
 | :----------------------- | :----------------------------------------------------------- |
-| General Link             | [**Corey Shafer Django I**](https://www.youtube.com/watch?v=UmljXZIypDc) <br /> [**Corey Shafer Django II**](https://www.youtube.com/watch?v=a48xeeo5Vnk) |
+| General Link             | [Corey Shafer Django I](https://www.youtube.com/watch?v=UmljXZIypDc) <br /> [Corey Shafer Django II](https://www.youtube.com/watch?v=a48xeeo5Vnk) |
 | **Pip Install**          | pip install Django                                           |
 | **View version (CLI)**   | Python -m django --version     RETURNS:  0.0.0               |
 | **View commands (CLI)**  | django-admin                                                 |
@@ -173,3 +177,11 @@ XXX
 | LINK    | XXX         |
 | XXX     | XXX         |
 | XXX     | XXX         |
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
