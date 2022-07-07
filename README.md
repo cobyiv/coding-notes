@@ -92,7 +92,7 @@ Python Web Framework
 | **Pip Install**          | pip install Django                                           |
 | **View version (CLI)**   | Python -m django --version     RETURNS:  0.0.0               |
 | **View commands (CLI)**  | django-admin                                                 |
-| **Create project (CLI)** | django-admin startproject PROJECT_NAME    (cant use dash in name only underscore)<br /><br />Output:<br /><img src="https://user-images.githubusercontent.com/46875099/177713084-d7bb535d-278e-452c-9b88-41ea9be9ec1e.png" alt="django output" style="zoom: 50%;" /> |
+| **Create project (CLI)** | django-admin startproject PROJECT_NAME    (cant use dash in name only underscore)<br /><br />Output:<br /><img src="https://user-images.githubusercontent.com/46875099/177713084-d7bb535d-278e-452c-9b88-41ea9be9ec1e.png" alt="django output" style="zoom: 25%;" /> |
 
 ## XXX
 
@@ -173,5 +173,3 @@ XXX
 | LINK    | XXX         |
 | XXX     | XXX         |
 | XXX     | XXX         |
-
-![image](https://user-images.githubusercontent.com/46875099/177713084-d7bb535d-278e-452c-9b88-41ea9be9ec1e.png)
