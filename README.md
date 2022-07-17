@@ -150,7 +150,7 @@ XXX
 | **Markdown Folder Structure (for README.md)** | https://newbedev.com/representing-directory-file-structure-in-markdown-syntax |
 | Diagram                                       | ![](https://user-images.githubusercontent.com/46875099/177905535-0f154efa-061a-46f9-b3f4-3f5bc200cb90.png) |
 
-## XXX
+## VSCODE
 
 XXX
 
@@ -159,6 +159,25 @@ XXX
 | LINK    | XXX         |
 | XXX     | XXX         |
 | XXX     | XXX         |
+
+#### Install VSCode Server to Ubunto Server
+
+Link: https://youtu.be/0mSBRAv8y5A
+
+Link: https://github.com/coder/code-server/blob/main/docs/guide.md
+
+1. `sudo apt update -y`
+2. `sudo apt upgrade -y`
+3. go to: https://github.com/coder/code-server/
+4. fine the latest release on right hand side and click (as of 2022.07.16 == V4.5.0)
+5. find the "code-server_{RELEASE}_l_amd64.deb", right-click, copy URL address
+6. `wget {URL ADDRESS}`
+7. `sudo dpkg -i code-server_4.5.0_amd64.deb` #update for your version
+8. `code-server --bind-addr 0.0.0.0:80` #start up, can change port if you want
+9. go into browser with code-server running and type `{IP}:{PORT}`
+10. it will ask for password, to access your password
+11.  `sudo cat ~/.config/code-server/config.yaml` #See password
+12. `sudo nano ~/.config/code-server/config.yaml` #change password 
 
 ## XXX
 
