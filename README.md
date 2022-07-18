@@ -116,6 +116,8 @@ Open Source Codec Converter
 | :------------------- | :----------------------------------------------------------- |
 | convert .MOV to .MP4 | `ffmpeg -i "IMG_3892.MOV" -vcodec h264 -acodec mp2 "IMG_3892.mp4"`<br />[Source](https://mrcoles.com/convert-mov-mp4-ffmpeg/) |
 | Convert gif to mp4   | `ffmpeg -f gif -i infile.gif outfile.mp4` [source](https://unix.stackexchange.com/questions/40638/how-to-do-i-convert-an-animated-gif-to-an-mp4-or-mv4-on-the-command-line) |
+| Optimize a gif  | `ffmpeg -y -i input.mp4 -filter_complex "fps=5,scale=480:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=32[p];[s1][p]paletteuse=dither=bayer" output.gif` [stackoverflow source](https://superuser.com/questions/1049606/reduce-generated-gif-size-using-ffmpeg) |
+
 
 ## FIGMA
 
