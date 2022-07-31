@@ -255,15 +255,19 @@ Container based development and deployment
 | remove container          | `docker rm {container_name}`      |
 |                           |                                   |
 
-## XXX
+## .bat
 
 XXX
 
-| Subject | Information |
-| :------ | :---------- |
-| LINK    | XXX         |
-| XXX     | XXX         |
-| XXX     | XXX         |
+| Subject       | Information                                                  |
+| :------------ | :----------------------------------------------------------- |
+| LINK          | XXX                                                          |
+| turn echo off | `@echo off`<br />this makes it so every command is not shown verbose. |
+| echo (print)  | `echo foo`                                                   |
+| get input     | `set /P VAR=input request:`                                  |
+| use variable  | `%VAR%`                                                      |
+| sleep         | `timeout /t 30`                                              |
+| comment       | `::`  -or-  `REM`<br />only difference is `REM` comments will be shown during execution |
 
 ```mermaid
 graph TD;
