@@ -150,6 +150,7 @@ XXX
 | **Gitignore**                                 | https://git-scm.com/docs/gitignore                           |
 | **markdown (for README.md)**                  | https://guides.github.com/features/mastering-markdown/       |
 | **Markdown Folder Structure (for README.md)** | https://newbedev.com/representing-directory-file-structure-in-markdown-syntax |
+| **Git Push**                                  | `git add --all `<br /> `git commit -m "NAME YOUR COMMIT APPROPRIATLEY" `<br /> `git push` |
 | Diagram                                       | ![](https://user-images.githubusercontent.com/46875099/177905535-0f154efa-061a-46f9-b3f4-3f5bc200cb90.png) |
 
 ## VSCODE
@@ -181,15 +182,65 @@ Link: https://github.com/coder/code-server/blob/main/docs/guide.md
 11.  `sudo cat ~/.config/code-server/config.yaml` #See password
 12. `sudo nano ~/.config/code-server/config.yaml` #change password 
 
-## XXX
+## REGEX
 
-XXX
+Regular Expressions,  text manipulation and query
 
-| Subject | Information |
-| :------ | :---------- |
-| LINK    | XXX         |
-| XXX     | XXX         |
-| XXX     | XXX         |
+| Metacharacters| Function                                           |
+| ---: | :-------------------------------------------------|
+| .                                              | Any Character Except New Line  \d  - Digit (0-9) |
+| \D                                             | Not a Digit (0-9)                                |
+| \w                                             | Word Character (a-z, A-Z, 0-9, _)                |
+| \W                                             | Not a Word Character                                         |
+| \s                                             | Whitespace (space, tab, newline)                 |
+| \S                                             | Not Whitespace (space, tab, newline)             |
+| \b                                             | Word Boundary                                    |
+| \B                                             | Not a Word Boundary                              |
+| ^                                              | Beginning of a String                            |
+| $                                              | End of a String                                  |
+| []                                             | Matches Characters in brackets                   |
+| [ ^ ]                                          | Matches Characters NOT in brackets               |
+| \|                                             | Either Or                                        |
+| ( )                                            | Group                                            |
+| **Quantifiers:**                               |                                                    |
+| *                                              | 0 or Mor\D                                       |
+| +                                              | 1 or More                                        |
+| ?                                              | 0 or One                                         |
+| {3}                                            | Exact Number                                     |
+| {3,4}                                          | Range of Numbers (Minimum, Maximum)              |
+| **Sample Regexs**                    |                                                    |
+| [a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+ | https://github.com/CoreyMSchafer/code_snippets/blob/master/Python-Regular-Expressions/snippets.txt |
+|                                                |                                                    |
+|                                                |                                                    |
+
+
+
+| Subject                                                      | Information                                                  |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| LINK                                                         | XXX                                                          |
+| **Import reg.ex.**                                           | `import  re`                                                 |
+| **Raw String**                                               | `r'string'`     <br />**EXAMPLE:**  <br />`print(r'\tTab')`     <br />note: will  ignore backslashes (\) |
+| **Compile Method**                                           | `pattern = re.compile(r'abc') `<br />`matches = pattern.finditer(text_to_search)`  <br />`for match in matches:  print(match)` <br /><br /> -->RETURNS:  `<_sre.SRE_Match object; span=(1,4), match='abc'>     span=(beginning  of match,end of match)` |
+| **String Slicing**                                           | EXAMPLE:   text_to_search[1:4]          RETURNS: text from characters 1 to 3 |
+| [**METACHARACTERS**](onenote:#REGULAR EXPRESSIONS&section-id={48406E99-CE54-4E9D-BFC7-DDC98114CD84}&page-id={DD3847D3-B6A9-444E-A303-E9B1913C1467}&object-id={54D30842-CF1E-4755-8569-9BFF87F1F795}&6E&base-path=https://schuchartdow-my.sharepoint.com/personal/coby_dowbuilt_com/Documents/Coby @ Work/CODING.one)  **(NEED TO BE ESCAPED)** | `. ^ $ *  + ? { } [ ] \ | ( ) ` <br />**EXAMPLE:**  pattern = re.compile(r'\.')  matches = pattern.finditer(text_to_search)  for match in matches:  print(match) <br />**EXAMPLE 2:**  pattern = re.compile(r'coryms\.com') <br />RETURNS: Match Objects  for **coryms.com ** |
+| **EXAMPLE SEARCH FOR PHONE NUMBER**                          | pattern = re.compile(r'\d\d\d.\d\d\d.\d\d\d\d')<br />matches = pattern.finditer(text_to_search)  for match in matches:  print(match)<br />RETURNS:  <_sre.SRE_Match object; span=(00,00), match='000-000-0000'> |
+| **USE A CHARACTER SET**     use brackets to specify characters to search for **[]** | `pattern = re.compile(r'\d\d\d[-.]\d\d\d[-.]\d\d\d\d')`<br />`matches = pattern.finditer(text_to_search)  for match in matches:  print(match)`<br />RETURNS: <br /> `<_sre.SRE_Match object; span=(00,00), match='000-000-0000'> `<br />NOTE: <br />will only return phone numbers with a - or . At that point in expression.<br /><br />**EXAMPLE 2:**  <br />`pattern = re.compile(r'[89]00[-.]\d\d\d[-.]\d\d\d\d') ` <br />RETURN  NOTE: only match 800 or 900 numbers at beginning |
+| **USE A CHARACTER SET WITH RANGE**     use brackets to specify characters to search for **[0-9]** or  **[a-c]** | **EXAMPLE 1:**<br />`pattern = re.compile(r'[0-5]') ` <br />RETURN NOTE: <br />only match any number between 0  and 5     <br /><br />**EXAMPLE 2:** <br />`pattern = re.compile(r'[a-z]')` <br />RETURN NOTE: only match any letter between a  and z     <br /><br />**EXAMPLE 3:**  <br />`pattern = re.compile(r'[a-zA-Z]') ` <br />RETURN NOTE: only match any letter between a  and z or between A and Z <br /><br />**EXAMPLE 4: NEGATE ^** <br />`pattern = re.compile(r'^[a-zA-Z]') ` <br />RETURN NOTE: only match any letter that is NOT between a and z or between A and Z |
+| **USE QUANTIFIERS**                  ***** - 0 or More                  **+** - 1 or More                  **?** - 0 or One                  **{3}** - Exact Number                  **{3,4}** - Range of Numbers (Minimum, Maximum) | **EXAMPLE 1:** <br />` pattern = re.compile(r'**\d**{3}**.\d**{3}**.\d**{4}') `<br />**RETURN NOTE:** only match 3-digits, any  character, 3-digits, any character, 4-digits <br /><br />**EXAMPLE 2:** <br /> `pattern = re.compile(r'**Mr\.**?**\s[A-Z]\w***')` <br />**RETURN NOTE:** only matches 'MR' then 0 or 1  '.' (periods), then a space, then an upper case letter between A-Z then 0 or  more word characters |
+| **USE GROUPS**     use parentheses to specify characters to search for  different patters **(a**\|**b)**  or **(1**\|**2)** | **EXAMPLE 1:** <br />` pattern = re.compile(r'M(r|s|rs)\.?\s[A-Z]\w*') `<br />**RETURN NOTE:** only matches 'M' then either an  'r', 's', or an 'rs', then 0 or 1 '.' (periods), then a space, then an upper  case letter between A-Z then 0 or more word characters. <br /><br />**EXAMPLE 1:** <br /> `pattern = re.compile(r'(Mr|Ms|Mrs)\.?\s[A-Z]\w*') ` <br />**RETURN NOTE:** only matches 'M' then either an  'r', 's', or an 'rs', then 0 or 1 '.' (periods), then a space, then an upper  case letter between A-Z then 0 or more word characters. |
+| **EXAMPLE SEARCH FOR EMAIL**                                 | **EXAMPLE 1:** <br />` pattern = re.compile(r'[a-zA-Z0-9.-]+@[a-zA-Z-]+\.(com|edu|net)')`<br />**RETURN NOTE:** only matches one or more of a-z  OR A-Z OR 0-9 OR '.' or '-', then an '@' symbol' then one or more of a-z OR  A-Z OR 0-9 OR '-', then a '.', then either 'com', 'edu' or 'net'. <br /><br />**EXAMPLE 3:**  <br />`pattern = re.compile(r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.(a-zA-Z0-9-.)+') ` <br />**RETURN NOTE:** this version was found off  internet. |
+| **EXAMPLE SEARCH FOR URL**      use parentheses to create groups within  the url to pull out of later **()**     *note: Parentheses  enlarged in example for clarity of usage. | EXAMPLE 1:  <br />`pattern =  re.compile(r'https?://(www.)?(\w+)(\.\w+)')`<br />RETURN NOTE:<br />only matches 'http' then 0 or 1  's', then '://', then 0 or 1 '[www.](http://www.)' then 1 or more  \word characters then a '.' followed by one or more word characters. |
+| **GROUP METHOD, PULL OUT SPECIFIC GROUPS FROM EXPRESIONS**      use parentheses to create groups within  the url to pull out of later **()**     *note: Parentheses  enlarged in example for clarity of usage. | **EXAMPLE: GROUP 0**  <br />`pattern =  re.compile(r'https?://(www.)?(\w+)(\.\w+)')`<br />`matches = pattern.finditer(urls)  for match in matches:  print(match.group(0)) `<br /> **RETURN NOTE:** group(0) is the entire  expression  So it would be:     https://www.google.com     http://coreyms.com     https://youtube.com     https://www.nasa.gov   <br /><br /><br />**EXAMPLE: GROUP 1**<br />`pattern =  re.compile(r'https?://(www.)?(\w+)(\.\w+)')` <br />`matches = pattern.finditer(urls)  for match in matches:  print(match.group(1))`<br /><br />**RETURN NOTE:** <br />group(1) is the optional  group noted in the expression     www.     None     None  www. <br /><br /><br />**EXAMPLE: GROUP 2** <br />`pattern =  re.compile(r'https?://(www.)?(\w+)(\.\w+)') `<br /> `matches = pattern.finditer(urls)  for match in matches:  print(match.group(2))` <br />**RETURN NOTE:** group(2) is the second group  noted in the expression<br />google     coreyms     youtube     nasa             <br /><br />**EXAMPLE: GROUP 3**  <br /><br />`pattern =  re.compile(r'https?://(www.)?(\w+)(\.\w+)')`<br />`matches = pattern.finditer(urls) `<br />`for match in matches:`<br />`print(match.group(3)) `<br /><br />RETURN NOTE:<br />group(3) is the thrid group  noted in the expression     .com     .com     .com     .gov              <br /> |
+| SUB method  REFERENCING GROUPS      use sub  method to replace items from patterns.      *note: Parentheses  enlarged in example for clarity of usage. | **EXAMPLE: SUB URLS** <br />`pattern =  re.compile(r'https?://(www.)?(\w+)(\.\w+)')` <br />`subbed_urls = pattern.sub(r'\2\3', urls)`<br />`print(subbed_urls)`<br />**<br />RETURN NOTE:** <br /><br />subbed urls:<br />google.com<br />coreyms.com<br />youtube.com<br />nasa.gov |
+| **.FINDALL METHOD**                                          | **EXAMPLE 1:** <br />`pattern = re.compile(r'M(r|s|rs)\.?\s[A-Z]\w*')`<br />`matches = pattern.findall(text_to_search) `<br /><br />**RETURN NOTE:** <br />returns just the strings from  groups established in regular expression. <br /> So: <br />Mr  Mr  Ms  Mrs     Mr <br />if multiple groups, will return tuples.<br />if no groups, will return all matches. |
+| **.MATCH METHOD**                                            | **EXAMPLE 1:**  pattern = re.compile(r'**Start**')     matches = pattern.match(sentence)     **RETURN NOTE:** will only return matches at  BEGINNING OF STRING. |
+| **.SEARCH METHOD**                                           | **EXAMPLE 1:**  pattern = re.compile(r'**a**')     matches = pattern.search(sentence)     **RETURN NOTE:** will only return first match  that it finds. |
+| **USING FLAGS**                                              | **EXAMPLE 1:**  pattern = re.compile(r'**start**', re.IGNORECASE)     matches = pattern.search(sentence)     **RETURN NOTE:** will ignore the case of any  characters in string and return first match.             **EXAMPLE 2:**  pattern = re.compile(r'**start**', re.I)     matches = pattern.search(sentence)     **RETURN NOTE:** will ignore the case of any  characters in string and return first match. |
+| **Use .start() and .end() to extract text**                  | ``import re`<br /><br />##string to search<br />`SEARCH_STRING = {PLACE STRING HERE}`<br /><br /><br />##start and finish extraction<br />`start_regex = re.compile(r'STARTING_STRING')`<br />`start = \[i for i in start_regex.finditer(SEARCH_STRING)][0].end()`<br />`finish_regex = re.compile(r'&scope')`<br />`finish = \[i for i in finish_regex.finditer(SEARCH_STRING)][0].start()`<br /><br />##result<br />`RESULT = SEARCH_STRING[start:finish]` |
+|                                                              |                                                              |
+
+
+
 
 ## XXX
 
