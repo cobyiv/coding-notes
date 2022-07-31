@@ -254,10 +254,11 @@ Container based development and deployment
 | stop or kill container    | `docker kill {container_name}`    |
 | remove container          | `docker rm {container_name}`      |
 |                           |                                   |
+|                           |                                   |
 
 ## .bat
 
-XXX
+batch file for windows automations
 
 | Subject       | Information                                                  |
 | :------------ | :----------------------------------------------------------- |
