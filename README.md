@@ -288,7 +288,6 @@ Regular Expressions,  text manipulation and query
 
 
 
-
 ## Docker
 
 Container based development and deployment
