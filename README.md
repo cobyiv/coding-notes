@@ -179,6 +179,26 @@ XXX
 | **Git Push**                                  | `git add --all `<br /> `git commit -m "NAME YOUR COMMIT APPROPRIATLEY" `<br /> `git push` |
 | Diagram                                       | ![](https://user-images.githubusercontent.com/46875099/177905535-0f154efa-061a-46f9-b3f4-3f5bc200cb90.png) |
 
+## PYTHON
+
+XXX
+
+| Subject | Information |
+| :------ | :---------- |
+| LINK    | XXX         |
+| XXX     | XXX         |
+| XXX     | XXX         |
+
+### PANDAS
+
+XXX
+
+| Subject                      | Information                                                  |
+| :--------------------------- | :----------------------------------------------------------- |
+| LINK                         | XXX                                                          |
+| Calculated Column            | `def func(x): return x*100`<br />`data = df['col'].apply(func)`<br />[source(ctrl+f 'simple solution')](https://stackoverflow.com/questions/34962104/how-can-i-use-the-apply-function-for-a-single-column) |
+| add column in specific place | \# Third position would be at index 2, because of zero-indexing. <br />`df.insert(2, 'new-col', data)`<br /><br />[source](https://discuss.codecademy.com/t/can-we-add-a-new-column-at-a-specific-position-in-a-pandas-dataframe/355842) |
+
 ## VSCODE
 
 XXX
