@@ -126,6 +126,21 @@ Python Web Framework
 | Deploy on CPANEL:                                     | [Deploy Django on Shared Hosting](https://www.youtube.com/watch?v=2Y88Srz16Q8&t=13s) |
 | CREATE NEW DATABASE ENTRY AFTER MODEL IS ESTABLISHED: | [Python Django Tutorial: Full-Featured Web App Part 10 - Create, Update, and Delete Posts](https://youtu.be/-s7e_Fy6NRU?t=1234) |
 
+## Docker
+
+Container based development and deployment
+
+| Subject                   | Information                       |
+| :------------------------ | :-------------------------------- |
+| LINK                      | XXX                               |
+| run container             | `docker run {container_name}`     |
+| interactive terminal (ti) | `docker run -ti {container_name}` |
+| stop or kill container    | `docker kill {container_name}`    |
+| remove container          | `docker rm {container_name}`      |
+|                           |                                   |
+|                           |                                   |
+|                           |                                   |
+
 ## Egnyte API
 
 Cloud File Sharing Application
@@ -288,20 +303,6 @@ Regular Expressions,  text manipulation and query
 
 
 
-## Docker
-
-Container based development and deployment
-
-| Subject                   | Information                       |
-| :------------------------ | :-------------------------------- |
-| LINK                      | XXX                               |
-| run container             | `docker run {container_name}`     |
-| interactive terminal (ti) | `docker run -ti {container_name}` |
-| stop or kill container    | `docker kill {container_name}`    |
-| remove container          | `docker rm {container_name}`      |
-|                           |                                   |
-|                           |                                   |
-|                           |                                   |
 
 
 
