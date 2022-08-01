@@ -67,6 +67,32 @@ Microsoft Cloud
 | :------------------ | :----------------------------------------------------------- |
 | **Use O365 Python** | This link shows  how to set up API permissions on Azure<br />  https://www.inkoop.io/blog/how-to-get-azure-api-credentials/  <br />  <br />Use this one next  to actually use in python <br />  https://pietrowicz-eric.medium.com/how-to-read-microsoft-outlook-calendars-with-python-bdf257132318 |
 
+## bash
+
+unix automation
+
+| Subject | Information                                                  |
+| :------ | :----------------------------------------------------------- |
+| LINK    | [bash resource](https://www.taniarascia.com/how-to-create-and-use-bash-scripts/) |
+|         |                                                              |
+|         |                                                              |
+
+
+## .bat
+
+batch file for windows automations
+
+| Subject       | Information                                                  |
+| :------------ | :----------------------------------------------------------- |
+| LINK          | XXX                                                          |
+| turn echo off | `@echo off`<br />this makes it so every command is not shown verbose. |
+| echo (print)  | `echo foo`                                                   |
+| get input     | `set /P VAR=input request:`                                  |
+| use variable  | `%VAR%` <br />for input with spaces use:<br />`'%VAR%'`      |
+| sleep         | `timeout /t 30`                                              |
+| open file     | `start FILENAME`                                             |
+| comment       | `::`  -or-  `REM`<br />only difference is `REM` comments will be shown during execution |
+
 ## CMD
 
 Command Prompt for Windows
@@ -257,19 +283,8 @@ Container based development and deployment
 |                           |                                   |
 |                           |                                   |
 
-## .bat
 
-batch file for windows automations
 
-| Subject       | Information                                                  |
-| :------------ | :----------------------------------------------------------- |
-| LINK          | XXX                                                          |
-| turn echo off | `@echo off`<br />this makes it so every command is not shown verbose. |
-| echo (print)  | `echo foo`                                                   |
-| get input     | `set /P VAR=input request:`                                  |
-| use variable  | `%VAR%` <br />for input with spaces use:<br />`'%VAR%'`      |
-| sleep         | `timeout /t 30`                                              |
-| comment       | `::`  -or-  `REM`<br />only difference is `REM` comments will be shown during execution |
 
 ```mermaid
 graph TD;
