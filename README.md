@@ -193,11 +193,12 @@ XXX
 
 XXX
 
-| Subject                      | Information                                                  |
-| :--------------------------- | :----------------------------------------------------------- |
-| LINK                         | XXX                                                          |
-| Calculated Column            | `def func(x): return x*100`<br />`data = df['col'].apply(func)`<br />[source(ctrl+f 'simple solution')](https://stackoverflow.com/questions/34962104/how-can-i-use-the-apply-function-for-a-single-column) |
-| add column in specific place | \# Third position would be at index 2, because of zero-indexing. <br />`df.insert(2, 'new-col', data)`<br /><br />[source](https://discuss.codecademy.com/t/can-we-add-a-new-column-at-a-specific-position-in-a-pandas-dataframe/355842) |
+| Subject                                                      | Information                                                  |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| LINK                                                         | XXX                                                          |
+| **Calculated Column**                                        | `def func(x): return x*100`<br />`data = df['col'].apply(func)`<br />[source(ctrl+f 'simple solution')](https://stackoverflow.com/questions/34962104/how-can-i-use-the-apply-function-for-a-single-column) |
+| **Add Column (in specific location)**                        | \# Third position would be at index 2, because of zero-indexing. <br />`df.insert(2, 'new-col', data)`<br /><br />[source](https://discuss.codecademy.com/t/can-we-add-a-new-column-at-a-specific-position-in-a-pandas-dataframe/355842) |
+| **Series.map()** vs. **df.applymap()** vs. **df/series.apply()** | Series.map = element wise for series<br />df.applymap = element wise in dataframe<br />.apply = df or series, complex elementwise or aggregation<br /><br />[source](https://sparkbyexamples.com/pandas/pandas-difference-between-map-applymap-and-apply-methods/#:~:text=What%20is%20the%20difference%20between,in%20both%20DataFrame%20and%20Series.) |
 
 ## VSCODE
 
