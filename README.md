@@ -319,9 +319,12 @@ Regular Expressions,  text manipulation and query
 
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+graph LR;
+    A(Receive Drawings / Models)-->B(Model / Coordinate MEPs);
+    B-->C{Submits};
+    C-->D(Subcontractor / Design Feedback);
+    D-->B;
+    D-->E{Approval}
+    E-->F(Approved MEP Drawings)
+    E-->G(Framing Coordination / Shops)
 ```
