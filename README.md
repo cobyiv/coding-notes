@@ -1,6 +1,15 @@
-# coding-notes
-{: .no_toc .text-delta }
-1. TOC {:toc}
+
+# Coding Notes
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 <span style="color:blue">some *This is Blue italic.* text</span>
 
