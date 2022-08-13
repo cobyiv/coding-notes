@@ -1,5 +1,6 @@
 # coding-notes
-{:toc}
+{: .no_toc .text-delta }
+1. TOC {:toc}
 
 <span style="color:blue">some *This is Blue italic.* text</span>
 
