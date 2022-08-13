@@ -84,7 +84,7 @@ batch file for windows automations
 
 | Subject       | Information                                                  |
 | :------------ | :----------------------------------------------------------- |
-| LINK          | XXX                                                          |
+| LINK          | [reference commands](https://www.tutorialspoint.com/batch_script/batch_script_quick_guide.htm) |
 | turn echo off | `@echo off`<br />this makes it so every command is not shown verbose. |
 | echo (print)  | `echo foo`                                                   |
 | get input     | `set /P VAR=input request:`                                  |
