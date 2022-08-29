@@ -113,6 +113,7 @@ Command Prompt for Windows
 | :------------------------------ | :----------------------------------------------------------- |
 | **Go Back one folder**          | cd ..\                                                       |
 | **Delete files in a directory** | You can do this using del and the /S flag (to tell it to remove all files from   all subdirectories):   <br />`del /S C:\Path\to\directory\` <br />[source](https://superuser.com/questions/173859/how-can-i-delete-all-files-subfolders-in-a-given-folder-via-the-command-prompt) |
+| Get Wifi Passwords              | 1. Open CMD<br />2.`netsh wlan show profile`<br />3. find the `{WIFI NAME}`<br />4. `netsh wlan show profile {WIFI NAME} key=clear` |
 ## Cryptography
 
 Python Encryption Library
