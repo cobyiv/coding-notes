@@ -1,5 +1,6 @@
 plugins:
   - jekyll-relative-links
+  - jekyll-spaceship
 remote_theme: just-the-docs/just-the-docs
 relative_links:
   enabled: true
